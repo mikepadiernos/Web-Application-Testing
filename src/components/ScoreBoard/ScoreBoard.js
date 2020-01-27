@@ -3,12 +3,17 @@ import ScoreBoardTime from "./ScoreBoardTime";
 import ScoreBoardScores from "./ScoreBoardScores";
 import ScoreBoardAtBat from "./ScoreBoardAtBat";
 
-const ScoreBoard = () => {
+const ScoreBoard = ({ball, strike, foul, hit}) => {
 	return (
 		<section className="scoreboard">
 			<ScoreBoardTime />
 			<ScoreBoardScores />
-			<ScoreBoardAtBat />
+			<ScoreBoardAtBat
+				ball={ball}
+				strike={strike}
+				foul={foul}
+				hit={hit}
+			/>
 		</section>
 	)
 };
