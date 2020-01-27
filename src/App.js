@@ -43,7 +43,7 @@ function App() {
         <header>
           <h1>Scoreboard</h1>
         </header>
-        <div role="main-content" className="main-content">
+        <div role="main-content" className="main-content" data-testid="main-content">
           <ScoreBoard
             ball={ball}
             strike={strike}
