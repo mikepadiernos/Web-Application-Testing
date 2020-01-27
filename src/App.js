@@ -5,7 +5,6 @@ import './css/App.css'
 
 import ScoreBoard from "./components/ScoreBoard/ScoreBoard";
 import DashBoard from "./components/DashBoard/DashBoard";
-import ScoreBoardAtBat from "./components/ScoreBoard/ScoreBoardAtBat";
 
 function App() {
 
@@ -18,23 +17,24 @@ function App() {
     setBall(0);
     setStrike(0);
     setFoul(0);
-    setHit(0);
   };
 
   const ballCount = () => {
     ball === 4 ? reset() : setBall(balls => balls + 1);
   };
 
+  const foulCount = () => {
+    // foul >= 2 ? setFoul(2) : setFoul(fouls => fouls + 1); setStrike(strikes => strikes + 1);
+    if( foul >= 2) {
+      setFoul(2);
+    } else {
+      setFoul(fouls => fouls + 1);
+      setStrike(strikes => strikes + 1);
+    }
+  };
+
   const strikeCount = () => {
     strike === 3 ? reset() : setStrike(strikes => strikes + 1);
-  };
-
-  const foulCount = () => {
-    strike === 2 ? setStrike(2): setStrike(strikes => strikes + 1);
-  };
-
-  const fouls = () => {
-    foul === 2 ? setFoul(2): setFoul(fouls => fouls + 1);
   };
 
   return (

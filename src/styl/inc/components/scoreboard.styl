@@ -3,7 +3,7 @@
 .scoreboard
 	display grid
 	grid-template-columns repeat(12, 1fr)
-	
+	grid-gap 10px
 	.sbt-minutes
 		font-weight bolder
 		grid-column 1 / 3
@@ -32,16 +32,28 @@
 		grid-row 2 / 3
 	.sbab-ball-title,
 	.sbab-ball-score
-		grid-column 1 / 4
+		grid-column 1 / 5
 	.sbab-strike-title,
 	.sbab-strike-score
-		grid-column 4 / 7
+		grid-column 5 / 9
 	.sbab-foul-title,
 	.sbab-foul-score
-		grid-column 7 / 10
+		grid-column 9 / 13
 	.sbab-hit-title,
 	.sbab-hit-score
 		grid-column 10 / 13
+	//.sbab-ball-title,
+	//.sbab-ball-score
+	//	grid-column 1 / 4
+	//.sbab-strike-title,
+	//.sbab-strike-score
+	//	grid-column 4 / 7
+	//.sbab-foul-title,
+	//.sbab-foul-score
+	//	grid-column 7 / 10
+	//.sbab-hit-title,
+	//.sbab-hit-score
+	//	grid-column 10 / 13
 	.sbab-ball-title,
 	.sbab-strike-title,
 	.sbab-foul-title,

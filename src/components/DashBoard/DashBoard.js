@@ -5,8 +5,8 @@ const DashBoard = ({ ball, reset, strike, foul }) => {
 		<section className="dashboard">
 			<button onClick={() => strike()}>Strike</button>
 			<button onClick={() => ball()}>Ball</button>
-			<button onClick={() => reset()}>Hit</button>
 			<button onClick={() => foul()}>Foul</button>
+			<button onClick={() => reset()}>Hit</button>
 		</section>
 	)
 };

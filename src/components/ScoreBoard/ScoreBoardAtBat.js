@@ -16,8 +16,8 @@ const ScoreBoardAtBat = ({ball, strike, foul, hit}) => {
 				<div className="sb-item sbab-foul-score">{foul}</div>
 			{/*</div>*/}
 			{/*<div className="sbab-hit">*/}
-				<div className="sb-title sbab-hit-title">Hit</div>
-				<div className="sb-item sbab-hit-score">{hit}</div>
+			{/*	<div className="sb-title sbab-hit-title">Hit</div>*/}
+			{/*	<div className="sb-item sbab-hit-score">{hit}</div>*/}
 			{/*</div>*/}
 		</>
 	)
