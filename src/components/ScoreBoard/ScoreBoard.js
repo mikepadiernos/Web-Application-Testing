@@ -5,7 +5,7 @@ import ScoreBoardAtBat from "./ScoreBoardAtBat";
 
 const ScoreBoard = () => {
 	return (
-		<section>
+		<section className="scoreboard">
 			<ScoreBoardTime />
 			<ScoreBoardScores />
 			<ScoreBoardAtBat />

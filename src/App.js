@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import { Route } from 'react-router-dom';
+
+import './css/App.css'
+
 import ScoreBoard from "./components/ScoreBoard/ScoreBoard";
 import DashBoard from "./components/DashBoard/DashBoard";
 
